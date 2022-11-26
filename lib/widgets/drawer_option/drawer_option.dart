@@ -24,15 +24,6 @@ class DrawerOption extends StatelessWidget {
           iconData: iconData,
         ),
       ),
-      tablet: OrientationLayout(
-        landscape: DrawerOptionTabletLandscape(
-          iconData: iconData,
-        ),
-        portrait: DrawerOptionTabletPortrait(
-          title: title,
-          iconData: iconData,
-        ),
-      ),
     );
   }
 }

@@ -15,7 +15,6 @@ class HomeView extends StatelessWidget {
         portrait: HomeMobilePortrait(),
         landscape: HomeMobileLandscape(),
       ),
-      tablet: HomeViewTablet(),
     );
   }
 }

@@ -18,9 +18,5 @@ DeviceScreenType getDeviceScreenType(MediaQueryData mediaQuery) {
     return DeviceScreenType.desktop;
   }
 
-  if (deviceWidth > 600) {
-    return DeviceScreenType.tablet;
-  }
-
   return DeviceScreenType.mobile;
 }
