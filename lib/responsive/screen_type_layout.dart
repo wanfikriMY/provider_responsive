@@ -3,12 +3,12 @@ import 'package:provider_responsive/enums/device_screen_type.dart';
 import 'package:provider_responsive/responsive/responsive_builder.dart';
 
 class ScreenTypeLayout extends StatelessWidget {
-  final Widget? mobile;
+  final Widget mobile;
   final Widget? desktop;
 
   const ScreenTypeLayout({
     super.key,
-    this.mobile,
+    required this.mobile,
     this.desktop,
   });
 
@@ -18,10 +18,10 @@ class ScreenTypeLayout extends StatelessWidget {
       builder: (context, sizingInformation) {
         switch (sizingInformation.deviceScreenType) {
           case DeviceScreenType.desktop:
-            return desktop ?? Container();
+            return desktop ?? mobile;
 
           default:
-            return mobile ?? Container();
+            return mobile;
         }
       },
     );

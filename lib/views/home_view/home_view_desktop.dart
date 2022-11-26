@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider_responsive/widgets/app_drawer/app_drawer.dart';
 
-class HomeViewTablet extends StatelessWidget {
-  const HomeViewTablet({super.key});
+class HomeViewDesktop extends StatelessWidget {
+  const HomeViewDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {

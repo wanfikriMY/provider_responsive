@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider_responsive/responsive/orientation_layout.dart';
 import 'package:provider_responsive/responsive/screen_type_layout.dart';
-import 'package:provider_responsive/views/home_view/home_mobile_landscape.dart';
-import 'package:provider_responsive/views/home_view/home_mobile_portrait.dart';
-import 'package:provider_responsive/views/home_view/home_view_tablet.dart';
+import 'package:provider_responsive/views/home_view/home_mobile.dart';
+import 'package:provider_responsive/views/home_view/home_view_desktop.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -13,8 +12,8 @@ class HomeView extends StatelessWidget {
     return ScreenTypeLayout(
       mobile: OrientationLayout(
         portrait: HomeMobilePortrait(),
-        landscape: HomeMobileLandscape(),
       ),
+      desktop: HomeViewDesktop(),
     );
   }
 }

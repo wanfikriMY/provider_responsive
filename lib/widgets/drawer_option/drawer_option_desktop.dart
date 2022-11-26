@@ -32,10 +32,10 @@ class DrawerOptionTabletPortrait extends StatelessWidget {
   }
 }
 
-class DrawerOptionTabletLandscape extends StatelessWidget {
+class DrawerOptionDesktopLandscape extends StatelessWidget {
   final IconData iconData;
 
-  const DrawerOptionTabletLandscape({
+  const DrawerOptionDesktopLandscape({
     Key? key,
     required this.iconData,
   }) : super(key: key);
